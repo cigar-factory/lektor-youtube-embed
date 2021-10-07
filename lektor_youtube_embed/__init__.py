@@ -1,7 +1,7 @@
 import urllib.parse
 
-from jinja2 import Markup, escape
 from lektor.pluginsystem import Plugin
+from markupsafe import Markup, escape
 
 _iframe_template = """<iframe{width}{height} src="https://www.youtube.com/embed/{id}"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
